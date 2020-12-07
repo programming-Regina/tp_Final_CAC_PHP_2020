@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .bg-image {
+    /* The image used */
+    background-image: url("../img/bg.jpg");
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  blockquote {
+    quotes: "«" "»";
+  }
+  blockquote:before { content: open-quote; }
+  blockquote:after  { content: close-quote; }
+
+  .contenido {
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  .text-container {
+    color: black;
+    margin: 0px;
+    padding: 0px;      
+  }
+
+  #requisitos  {
+    background-color: #ffadad;
+  }
+  #en_adopcion {
+    background-color: #ffd6a5;
+  }
+  #adopta {
+    background-color: #fdffb6;
+  }
+  #volutariado {
+    background-color: #caffbf;
+  }
+  #transito {
+    background-color: #9bf6ff;
+  }
+  #donaciones {
+    background-color: #a0c4ff;
+  }
+  #insumos {
+    background-color: #bdb2ff;
+  }
+  #recepcion {
+    background-color: #ffc6ff;
+  }
+  #castrar {
+    background-color: #ffadad;
+  }
+  #denuncias {
+    background-color: #ffd6a5;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .text-container {
+     
+   
+      border-radius: 10px; 
+      padding: 10px;
+    }
+  }

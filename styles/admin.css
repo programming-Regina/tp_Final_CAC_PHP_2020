@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.subt {
+    font-weight: bolder;
+}
+
+.mukta {
+    font-family: 'Mukta', sans-serif;
+    font-size: small;
+
+}
+
+#tabla-gatos-m {
+            margin: 0 auto;   
+}
+
+#info-vol {
+    background-color: lightgreen;
+}
+
+#tabla-vol,
+#agregar-vol {
+    background-color: lightsalmon;
+}
+
+#agregar-vol {
+    display: none;
+}
+
+#info-vol,
+#agregar-vol,
+#tabla-vol {
+    border-radius: 10px;
+}
+
