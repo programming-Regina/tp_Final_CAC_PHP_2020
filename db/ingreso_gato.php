@@ -20,7 +20,7 @@
          <?php session_unset();
             } ?>
      </div>
-     <form action="guardar.php" method="POST">
+     <form action="guardar.php" method="POST" enctype="multipart/form-data">
          <div class="form-group">
              <label for="formGroupExampleInput">Nombre</label>
              <input type="text" class="form-control" id="formGroupExampleInput" name = "nombre" placeholder="Ingrese el nombre del gato">

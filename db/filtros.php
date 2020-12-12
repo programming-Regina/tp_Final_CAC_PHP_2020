@@ -39,7 +39,7 @@ include_once("action.php");
                                 <?php echo html_entity_decode($gato['nom_gato']); ?>
                             </td>
                             <td>
-                                <?php echo html_entity_decode($gato['nombre'] . " " . $gato['apellido']); ?>
+                                <?php echo utf8_encode($gato['nombre'] . " " . $gato['apellido']); ?>
                             </td>
                         </tr>
                 <?php }
@@ -66,7 +66,7 @@ include_once("action.php");
                                 <?php echo html_entity_decode($gato['nom_gato']); ?>
                             </td>
                             <td>
-                                <?php echo html_entity_decode($gato['nombre'] . " " . $gato['apellido']); ?>
+                                <?php echo utf8_encode($gato['nombre'] . " " . $gato['apellido']); ?>
                             </td>
                             <td>
                                 <?php echo '<a href="mailto:' . $gato['email'] . '"><i class="far fa-paper-plane"></i> ' . html_entity_decode($gato['email']) . '</a>'; ?>
@@ -95,7 +95,7 @@ include_once("action.php");
                                 <?php echo html_entity_decode($gato['nom_gato']); ?>
                             </td>
                             <td>
-                                <?php echo html_entity_decode($gato['nombre'] . " " . $gato['apellido']); ?>
+                                <?php echo utf8_encode($gato['nombre'] . " " . $gato['apellido']); ?>
                             </td>
                             <td>
                                 <?php echo '<a href="mailto:' . $gato['email'] . '"><i class="far fa-paper-plane"></i> ' . html_entity_decode($gato['email']) . '</a>'; ?>
@@ -124,7 +124,7 @@ include_once("action.php");
                                 <?php echo html_entity_decode($gato['nom_gato']); ?>
                             </td>
                             <td>
-                                <?php echo html_entity_decode($gato['nombre'] . " " . $gato['apellido']); ?>
+                                <?php echo utf8_encode($gato['nombre'] . " " . $gato['apellido']); ?>
                             </td>
                             <td>
                                 <?php echo '<a href="mailto:' . $gato['email'] . '"><i class="far fa-paper-plane"></i> ' . html_entity_decode($gato['email']) . '</a>'; ?>

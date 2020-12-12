@@ -1,66 +1,35 @@
-<?php include('header.php') ?>
-<div class="bg-image"></div>
+<?php
+include_once("../db/conexion.php");
+include_once("partials/head_login.php"); ?>
 
-<div class="bg-text">
-<form>
-      <div class="form-group mt-2">
-        <div class="input-group w-100">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <i class="fas fa-user"></i>
-            </div>
-          </div>
-          <input type="text" class="form-control" id="user" placeholder="Nombre de usuario" name="user">
-        </div>
-      </div>
+    <?php
+    if (isset($_POST['access'])) {
+        $user = $_POST['user'];
+        $sent_pass = $_POST['sent_pass'];
 
-      <div class="form-group">
+        $query = "SELECT * FROM usuarios WHERE usuario = '$user'";
+        $resultado = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($conexion));
+        $row = mysqli_fetch_array($resultado);
+        $id = $row['id'];
+        $nom = $row['nombre'];
+        $clave = $row['clave'];
+        
 
-        <div class="input- w-100">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <i class="fas fa-key"></i>
-            </div>
-            <input type="password" class="form-control " id="pass" placeholder="Clave" name="pass">
-          </div>
-        </div>
-
-      </div>
-      <button type="submit" class="btn btn-dark">Ingresar</button>
-    </form>
-</div>
-
-<!-- LOGIN! -->
-<div class="container-fluid d-flex flex-row pt-5 h-100 justify-content-center align-items-center .bg-text" id="login">
-  <div class="container w-25 text-center p-5 bg-light border border-dark rounded shadow align-middle">
-    <img src="img/login.png" alt="login_user" style="width:100px;height:100px;">
-    <form>
-      <div class="form-group mt-2">
-        <div class="input-group w-100">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <i class="fas fa-user"></i>
-            </div>
-          </div>
-          <input type="text" class="form-control" id="user" placeholder="Nombre de usuario" name="user">
-        </div>
-      </div>
-
-      <div class="form-group">
-
-        <div class="input- w-100">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <i class="fas fa-key"></i>
-            </div>
-            <input type="password" class="form-control " id="pass" placeholder="Clave" name="pass">
-          </div>
-        </div>
-
-      </div>
-      <button type="submit" class="btn btn-dark">Ingresar</button>
-    </form>
-  </div>
-</div>
-<!-- Fin LOGIN! -->
-<?php include('footer.php') ?>
+        if ($clave == 'voluntario' && $sent_pass == 'voluntario') {
+            echo '<div class="container welcome mt-5 p-4 bg-info text-center"><h1> Bienvenid@ ' . utf8_encode($nom) . '</h1>';
+            echo '<h3>Debes <a class="btn btn-sm btn-warning" href="change_pass.php?id=' . $id . '">
+                  cambiar tu contraseña</a></h3></div>';;
+        } else {
+           if (password_verify($sent_pass, $clave)) {  
+               echo '<br><br><br><br><br><br><br>Bienvenido,  '.$nom;
+               # no funciona el header("Location...) en el servidor, so:
+               # header("Location: ../db/index_db.php");
+               echo "<script>location.href='../db/index_db.php';</script>";
+            } else {    
+                $_SESSION['message'] = 'Datos incorrectos.';
+                $_SESSION['message_color'] = 'danger';                
+                header("Location: access.php");  
+            } 
+        }
+    }
+    include('footer.php'); ?>

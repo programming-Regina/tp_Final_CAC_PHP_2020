@@ -19,7 +19,7 @@ if (isset($_GET['id'])) {
         $vac = $row['vacunado'];
         $desp = $row['desparasitado'];
         $cast = $row['castrado'];
-        $foto = $row['foto'];
+        $fotop = $row['foto'];
         $mentor = $row['mentor'];
         $adoptable = $row['apto_adopc'];
         $adoptado = $row['adoptado'];
@@ -59,7 +59,11 @@ if (isset($_POST['update'])) {
     } else {
         $adoptado = 0;
     }
-    $foto = $_POST['foto'];
+    if ($_POST['foto'] == "") {
+        $foto = $fotop;
+    } else {
+        $foto = $_POST['foto'];
+    }
     $mentor = $_POST['mentor'];
 
     $query = "UPDATE gatos set 
@@ -126,8 +130,8 @@ if (isset($_POST['update'])) {
             </div>
             <div class="col">Foto<br>
                 <div class="custom-file mt-2 align-bottom">
-                    <input type="file" class="custom-file-input " id="customFile" name="foto"  value="<?php echo $foto; ?>">
-                    <label class="custom-file-label" for="customFile"><?php echo $foto; ?></label>
+                    <input type="file" class="custom-file-input " id="customFile" name="foto"  value="<?php echo $fotop; ?>">
+                    <label class="custom-file-label" for="customFile"><?php echo $fotop; ?></label>
                 </div>
             </div>
             <div class="col">

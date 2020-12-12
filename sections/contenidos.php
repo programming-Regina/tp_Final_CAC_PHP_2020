@@ -1,6 +1,5 @@
 <?php include('header.php') ?>
 
-
 <div class="container-fluid contenido w-100" id="nosotros">
     <div class="container">
         <div class="img mt-1">
@@ -109,7 +108,7 @@
     <div class="container">
         <div class="texto text-justify">
             <h4 class="bg-dark text-light p-1 text-center">Nuestros candidatos en adopción</h4>
-            <p>...</p>
+            <?php include('kitty_show.php'); ?>
         </div>
     </div>
 </div>
@@ -120,43 +119,43 @@
         </div>
         <div class="texto text-justify">
             <h4 class="bg-dark text-light p-1 text-center">Contacto</h4>
-            <form class="mt-3 needs-validation" novalidate>
+            <form class="mt-3 needs-validation" name="frmContacto" method="post" action="sendbymail.php" novalidate>
                 <h4> Por favor completa el formulario</h4>
-                <div class="row mt-2">
-                    <div class="col">
+                <div class="container formu d-flex mt-2 w-100">
+                    <div class="col50l">
                         <div class="form-group">
                             <label>Nombre completo (obligatorio)</label>
-                            <input type="text" class="form-control" id="exampleInputName2" aria-describedby="nameHelp" required />
+                            <input type="text" class="form-control" name="nomcomplet" id="exampleInputName2" aria-describedby="nameHelp" required />
                             <div class="invalid-feedback">
                                 Necesitamos saber tu nombre.
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col50r">
                         <div class="form-group">
                             <label>Dirección de eMail (obligatorio)</label>
-                            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" required>
+                            <input type="email" name="emailcomplet" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" required>
                             <div class="invalid-feedback">
                                 Necesitamos tu dirección de eMail para responderte.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
+                <div class="container formu d-flex">
+                    <div class="col50l">
                         <div class="form-group">
                             <label>Teléfono celular (obligatorio)</label>
-                            <input type="text" class="form-control" id="celular2" name="celular2" aria-describedby="celular2" placeholder="(011)" required>
+                            <input type="text" name="celcomplet" class="form-control" id="celular2" name="celular2" aria-describedby="celular2" placeholder="(011)" required>
                             <div class="invalid-feedback">
                                 Necesitamos tener tu teléfono para contactarte.
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col50r">
                         <div class="form-group">
                             <label>Motivo del contacto (obligatorio)</label>
                             <select id="motivo" name="motivo" class="form-control" required>
-                            <option value="" disabled selected>Seleccioná una opción</option>
+                                <option value="" disabled selected>Seleccioná una opción</option>
                                 <option>Deseo adoptar</option>
                                 <option>Deseo donar</option>
                                 <option>Otras consultas</option>
@@ -168,14 +167,14 @@
                     </div>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" name="candidate" class="form-check-input" id="exampleCheck1" value="0">
                     <label class="form-check-label" for="exampleCheck1">Deseo adoptar y cumplo con los <a href="contenidos.php#requisitos" target="_BLANK">requisitos</a></label>
                 </div>
                 <div class="form-group mt-3">
-                    <textarea class="form-control" id="mensaje" rows="3">Dejanos tu mensaje</textarea>
+                    <textarea class="form-control" name="comments" id="mensaje" rows="3" placeholder="Dejanos tu mensaje"></textarea>
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" name="submit-contact" class="btn btn-danger btn-block">Enviar</button></div>
+                    <input type="submit" name="submit-contact" class="btn btn-danger btn-block" value="Enviar"></input></div>
             </form>
         </div>
     </div>
@@ -186,11 +185,11 @@
         <div class="img mt-1">
             <img src="../img/bebe.jpg" class="img-fluid rounded mx-auto d-block" alt="Denuncia" width="100%">
         </div>
-        <div class="texto text-justify">
+        <div class="texto text-center">
             <h4 class="bg-dark text-light p-1 text-center">Red de voluntarios</h4>
-            <p>Por el momento nuestro voluntariado no esta activo.</p>
+            <strong><p class="mt-4">Por el momento nuestro voluntariado no esta activo.</p>
             <p>Pronto volveremos a abrir las postulaciones.</p>
-            <p>Gracias!</p>
+            <p>Gracias!</p></strong>
         </div>
     </div>
 </div>
@@ -499,4 +498,6 @@
         </div>
     </div>
 </div>
+</div>
+<?php include('pie.php'); ?>
 <?php include('footer.php') ?>

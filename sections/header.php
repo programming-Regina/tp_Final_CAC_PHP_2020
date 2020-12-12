@@ -26,24 +26,24 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="contenidos.php#nosotros">Nosotros <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contenidos.php#nosotros"  onclick="sshow('nosotros')">Nosotros <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Adoptá
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="contenidos.php#requisitos">Requisitos de adopción</a>
-                <a class="dropdown-item" href="contenidos.php#en_adopcion">En adopción</a>
-                <a class="dropdown-item" href="contenidos.php#contacto">Adoptá</a>
+                <a class="dropdown-item" href="contenidos.php#requisitos" onclick="sshow('requisitos')">Requisitos de adopción</a>
+                <a class="dropdown-item" href="contenidos.php#en_adopcion" onclick="sshow('en_adopcion')">En adopción</a>
+                <a class="dropdown-item" href="contenidos.php#contacto" onclick="sshow('contacto')">Adoptá</a>
               </div>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Salvá Vidas
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="contenidos.php#castrar">Castrá</a>
-                <a class="dropdown-item" href="contenidos.php#denuncias">Denunciá el maltrato</a>
+                <a class="dropdown-item" href="contenidos.php#castrar" onclick="sshow('castrar')">Castrá</a>
+                <a class="dropdown-item" href="contenidos.php#denuncias" onclick="sshow('denuncias')">Denunciá el maltrato</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -51,30 +51,30 @@
                 Participá
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="contenidos.php#voluntariado">Voluntariado</a>
-                <a class="dropdown-item" href="contenidos.php#transito">Hogares de tránsito</a>
+                <a class="dropdown-item" href="contenidos.php#voluntariado" onclick="sshow('voluntariado')">Voluntariado</a>
+                <a class="dropdown-item" href="contenidos.php#transito" onclick="sshow('transito')">Hogares de tránsito</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contenidos.php#contacto">Contacto</a>
+              <a class="nav-link" href="contenidos.php#contacto" onclick="sshow('contacto')">Contacto</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Donaciones
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="contenidos.php#donaciones">Aportes económicos</a>
-                <a class="dropdown-item" href="contenidos.php#insumos">Donación de insumos</a>
-                <a class="dropdown-item" href="contenidos.php#recepcion">Puntos de recepción</a>
+                <a class="dropdown-item" href="contenidos.php#donaciones" onclick="sshow('donaciones')">Aportes económicos</a>
+                <a class="dropdown-item" href="contenidos.php#insumos" onclick="sshow('insumos')">Donación de insumos</a>
+                <a class="dropdown-item" href="contenidos.php#recepcion" onclick="sshow('recepcion')">Puntos de recepción</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Administración</a>
+              <a class="nav-link" href="access.php">Administración</a>
             </li>
           </ul>
         </div>
       </span>
    
   </nav>
-
+  <script src="../scripts/main.js"></script>
   <!-- Fin NAV BAR -->

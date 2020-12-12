@@ -1,17 +1,21 @@
-(function() {
+$('.contenido').hide();
+$('#nosotros').show();
+
+// valida forms Boostrap
+(function () {
   'use strict';
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     // Busca los formularios a validar
     var forms = document.getElementsByClassName('needs-validation');
     // Patrullaje!!!
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
+    var validation = Array.prototype.filter.call(forms, function (form) {
+      form.addEventListener('submit', function (event) {
         if (form.checkValidity() === false) {
           event.preventDefault();
-          event.stopPropagation();         
+          event.stopPropagation();
         }
         form.classList.add('was-validated');
-      
+
       }, false);
     });
   }, false);
@@ -31,4 +35,10 @@ function show(que) {
     document.getElementById('agregar-vol').style.display = "none";
     document.getElementById('info-vol').style.display = "block";
   }
+}
+
+function sshow(me) {
+  $('.contenido').hide();
+  $('#'+me ).show();
+  
 }
