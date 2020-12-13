@@ -5,6 +5,7 @@
     eMail: programming.regina@gmail.com
 -->
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,11 +48,15 @@
                     <a class="nav-link" data-toggle="modal" href="#exampleModal"><i class="far fa-question-circle"></i> Acerca</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                    <a class="nav-link" href="../sections/salir.php"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
                 </li>
             </ul>
             <span class="navbar-text">
-                <i class="fas fa-tools text-dark"></i> Área Administrativa
+                <?php if (isset($_SESSION['username'])) { ?>
+                    <a class="nav-link" href="#"><h3><i class="fas fa-user-circle"></i><small> <?= html_entity_decode($_SESSION['username']) ?></small></h3></a>
+                    <?php } else { ?>
+                    
+                    <a class="nav-link" href="access.php"><i class="fas fa-tools"></i>Administración</a> <?php } ?>
             </span>
         </div>
     </nav>

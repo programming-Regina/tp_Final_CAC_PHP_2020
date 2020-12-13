@@ -1,8 +1,9 @@
  <?php
-     include_once("conexion.php");
+    session_start();
+    include_once("conexion.php");
     include_once("header_admin.php");
 
-    
+
     ?>
  <!-- FICHA DE INGRESO NUEVO GATO -->
  <div class="container mt-4" id="ingreso">
@@ -23,11 +24,11 @@
      <form action="guardar.php" method="POST" enctype="multipart/form-data">
          <div class="form-group">
              <label for="formGroupExampleInput">Nombre</label>
-             <input type="text" class="form-control" id="formGroupExampleInput" name = "nombre" placeholder="Ingrese el nombre del gato">
+             <input type="text" class="form-control" id="formGroupExampleInput" name="nombre" placeholder="Ingrese el nombre del gato">
          </div>
          <div class="form-group">
              <label for="formGroupExampleInput2">Raza/Color/Señas particulares</label>
-             <input type="text" class="form-control" id="formGroupExampleInput2" name = "raza" placeholder="Ingrese información que ayude a identificar al gatito">
+             <input type="text" class="form-control" id="formGroupExampleInput2" name="raza" placeholder="Ingrese información que ayude a identificar al gatito">
          </div>
          <div class="form-row">
              <div class="col">
@@ -44,7 +45,7 @@
              </div>
              <div class="col">
                  <label for="formGroupExampleInput2">Fecha de Ingreso</label>
-                 <input type="date" class="form-control" id="formGroupExampleInput2" name= "ingreso" placeholder="">
+                 <input type="date" class="form-control" id="formGroupExampleInput2" name="ingreso" placeholder="">
              </div>
              <div class="col">Foto<br>
                  <div class="custom-file mt-2">
@@ -97,7 +98,7 @@
              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" name="adoptado" value="1">
              <label class="form-check-label" for="inlineCheckbox3">Adoptado</label>
          </div>
-         <div class="form-group mt-2"><button type="submit" name= "agregar" class="btn btn-success btn-block">Guardar</button></div>
+         <div class="form-group mt-2"><button type="submit" name="agregar" class="btn btn-success btn-block">Guardar</button></div>
      </form>
  </div>
  <!-- FIN FICHA DE INGRESO NUEVO GATO -->

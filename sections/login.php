@@ -1,4 +1,10 @@
 <?php
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+?>
+<?php
+session_start();
 include_once("../db/conexion.php");
 include_once("partials/head_login.php"); ?>
 
@@ -16,19 +22,18 @@ include_once("partials/head_login.php"); ?>
         
 
         if ($clave == 'voluntario' && $sent_pass == 'voluntario') {
-            echo '<div class="container welcome mt-5 p-4 bg-info text-center"><h1> Bienvenid@ ' . utf8_encode($nom) . '</h1>';
+            echo '<div class="container welcome w-50 mt-5 p-4 bg-info text-center"><h1> Bienvenid@ ' . html_entity_decode($nom) . '</h1>';
             echo '<h3>Debes <a class="btn btn-sm btn-warning" href="change_pass.php?id=' . $id . '">
                   cambiar tu contraseña</a></h3></div>';;
         } else {
            if (password_verify($sent_pass, $clave)) {  
-               echo '<br><br><br><br><br><br><br>Bienvenido,  '.$nom;
-               # no funciona el header("Location...) en el servidor, so:
-               # header("Location: ../db/index_db.php");
+               $_SESSION['username'] = $nom;
                echo "<script>location.href='../db/index_db.php';</script>";
             } else {    
                 $_SESSION['message'] = 'Datos incorrectos.';
-                $_SESSION['message_color'] = 'danger';                
-                header("Location: access.php");  
+                $_SESSION['message_color'] = 'danger';     
+                echo "<script>location.href='access.php'</script>";           
+                #header("Location: access.php");  
             } 
         }
     }

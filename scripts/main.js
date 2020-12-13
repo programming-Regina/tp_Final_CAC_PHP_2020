@@ -39,6 +39,6 @@ function show(que) {
 
 function sshow(me) {
   $('.contenido').hide();
-  $('#'+me ).show();
-  
+  $('#' + me).show();
+
 }

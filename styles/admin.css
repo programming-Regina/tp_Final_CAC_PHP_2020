@@ -16,7 +16,7 @@ body {
 }
 
 #tabla-gatos-m {
-            margin: 0 auto;   
+    margin: 0 auto;
 }
 
 #info-vol {
@@ -38,3 +38,10 @@ body {
     border-radius: 10px;
 }
 
+
+.welcome {
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 21px 1px rgba(165, 205, 212, 1);
+    -moz-box-shadow: 10px 10px 21px 1px rgba(165, 205, 212, 1);
+    box-shadow: 10px 10px 21px 1px rgba(165, 205, 212, 1);
+}

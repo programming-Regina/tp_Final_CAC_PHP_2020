@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
+
+.big-one {
+    flex-direction: row;
+}
+
+.fotohome,
+.butt-home {
+    height: 100vh;
+    width: 48vw;
+}
+
+.butt-home {
+    padding-right: 20px;
+}
+
+.eyecatcher {
+    background-image: url("../img/home.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.butt {
+    margin: 30px;
+}
+
+.cardmain-text,
+.cardmain-link {
+    font-size: small;
+}
+
+.cardmain {
+    margin-bottom: 10px;
+}
+.msg1 > #part1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+    color: aliceblue;
+}
+
+.msg1 > #part2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color: aliceblue;
+}
+
+@media (max-width: 600px) {
+    .big-one {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .flex-item,
+    .fotohome,
+    .butt-home,
+    .butt {
+        width: 100%;
+        margin: auto;
+    }
+
+    .butt-home {
+        padding: 10px;
+        height: auto;
+    }
+
+    .btn {
+        margin: 3px;
+    }
+
+    .eyecatcher,
+    .fotohome {
+        max-height: 300px;
+    }
+}

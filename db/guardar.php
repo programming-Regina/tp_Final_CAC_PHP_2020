@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 include("conexion.php");
 
 if (isset($_POST['agregar'])) {
@@ -75,5 +75,6 @@ if (isset($_POST['agregar'])) {
 
     $_SESSION['message'] = 'El registro se guardó correctamente.';
     $_SESSION['message_color'] = 'success';
-    header("Location: ingreso_gato.php");
+    echo "<script>location.href='ingreso_gato.php'</script>"; 
+   # header("Location: ingreso_gato.php");
 } include_once('footer_admin.php'); ?>

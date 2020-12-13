@@ -1,4 +1,10 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+<?php
+session_start();
 include_once("../db/conexion.php");
 include_once("partials/head_login.php");
 
@@ -30,7 +36,7 @@ if (isset($_GET['id'])) {
 }
 if (isset($_POST['send_passw'])) {
     $new_pass_cifrado = password_hash($_POST['new_pass'] , PASSWORD_DEFAULT, array("cost"=>10));  
-   $query2 = "UPDATE usuarios set 
+    $query2 = "UPDATE usuarios set 
         clave = '$new_pass_cifrado'
         WHERE id = $id";
     $resultado2 =  mysqli_query($conexion, $query2);
@@ -41,6 +47,7 @@ if (isset($_POST['send_passw'])) {
 
     $_SESSION['message'] = 'La clave se actualizó correctamente.';
     $_SESSION['message_color'] = 'success';
-   header("Location: access.php");
+    echo "<script>location.href='access.php'</script>";   
+   # header("Location: access.php");
 }
 ?>

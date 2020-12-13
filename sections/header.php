@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <script src="https://kit.fontawesome.com/f2652a0a74.js" crossorigin="anonymous"></script>
   <title>Regina N. Molares : Trabajo Práctico Final</title>
-  <link rel="icon" type="img/png" href="img/favicon.png">
+  <link rel="icon" type="img/png" href="../img/favicon.png">
   <base target="_self">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
@@ -18,7 +18,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
    
-      <a class="navbar-brand" href="#"><i class="fas fa-paw"></i> Refugio Patitas Solidarias </a>
+      <a class="navbar-brand" href="../index.php"><i class="fas fa-paw"></i> Refugio Patitas Solidarias </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

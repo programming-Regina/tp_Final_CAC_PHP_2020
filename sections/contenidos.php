@@ -156,9 +156,12 @@
                             <label>Motivo del contacto (obligatorio)</label>
                             <select id="motivo" name="motivo" class="form-control" required>
                                 <option value="" disabled selected>Seleccioná una opción</option>
-                                <option>Deseo adoptar</option>
-                                <option>Deseo donar</option>
+                                <option>Adoptar</option>
+                                <option>Transitar</option> 
+                                <option>Donar</option>     
+                                <option>Ser voluntario</option>                            
                                 <option>Otras consultas</option>
+                                <option>Reportar un fallo en la Web</option>
                             </select>
                             <div class="invalid-feedback">
                                 Necesitamos saber el motivo para derivar tu inquietud a la persona indicada más rápidamente .
@@ -231,7 +234,7 @@
                     <div class="card-header" id="headingOne4">
                         <h5 class="mb-0  text-center">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
-                                <img src="../img/bank.jpg"> Depósito o transferencia bancaria
+                                <img src="../img/bank.jpg"> Depósito o transferencia
                             </button>
                         </h5>
                     </div>
@@ -253,16 +256,16 @@
                     <div class="card-header" id="headingTwo4">
                         <h5 class="mb-0 text-center">
                             <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
-                                <img src="../img/mp.jpg"> MercadoPago
+                                <img src="../img/mp.jpg">
                             </button>
                         </h5>
                     </div>
                     <div id="collapseTwo4" class="collapse" aria-labelledby="headingTwo4" data-parent="#accordion">
                         <div class="card-body text-center">
-                            <button class="btn btn-info">Donar $100</button>
-                            <button class="btn btn-info">Donar $500</button>
-                            <button class="btn btn-info">Donar $1000</button>
-                            <button class="btn btn-info">Donar $5000</button>
+                            <button class="btn mt-1 btn-info">Donar $100</button>
+                            <button class="btn mt-1 btn-info">Donar $500</button>
+                            <button class="btn mt-1 btn-info">Donar $1000</button>
+                            <button class="btn mt-1 btn-info">Donar $5000</button>
                         </div>
                     </div>
                 </div>

@@ -33,10 +33,10 @@ include('header.php'); ?>
       <div class="alert alert-<?= $_SESSION['message_color']; ?> alert-dismissible fade show mt-3" role="alert">
         <?= $_SESSION['message']; ?> <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-
+          
         </button>
       </div>
-    <?php session_unset();
+    <?php session_destroy();
     } ?>
     <!-- FIN MENSAJE SI LOGIN INCORRECTO -->
   </form>
