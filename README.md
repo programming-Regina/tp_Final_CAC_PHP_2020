@@ -69,6 +69,6 @@
 - Boostrap 4, jQuery, Popper<br>
 - bs-custom-file-: resuelve el problema del input tipo file de BS <br>
 - Parte de los textos/contenidos pertenecen a la organización Proyecto 4 Patas y Miao Cats<br>
-- Este proyecto será adaptado a las necesidades y ofrecido en donación a "El Campito Felino".<br>
+<p>Este proyecto será adaptado a las necesidades y ofrecido en donación a "El Campito Felino".</p>
 
 <p>Secciones en desarrollo: Novedades, Prensa y Difusión, Tienda, todas secciones actualizables por usuarios con acceso.</p>
