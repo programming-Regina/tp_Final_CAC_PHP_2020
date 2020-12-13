@@ -53,7 +53,7 @@
    * Algunas características:<br>
        - Estilos CSS/Bootstrap, con algunos ajustes en Javascript. (Accordion, iframe con mapas)<br>
        - Formulario de contacto funcional con envío por email.<br>
-       - Sección Adoptá/En Adopción muestra candidatos levantados de la base de datos.<br>
+       - Sección Adoptá/En Adopción muestra candidatos levantados de la base de datos.<br><br>
 <p><b>Privado, pensado para trabajo de escritorio (no responsive)</b></p>
    * Login al área administrativa con sesión de usuario y clave encriptada (algoritmo CRYPT_BLOWFISH)<br>
    * Permite operaciones CRUD sobre:<br>
