@@ -36,14 +36,7 @@
             <h4>por <a href="mailto:programming.regina@gmail.com" style="color: white;">Regina Noemí Molares</a></h4>
         </span> 
     </div>
-    <div class="container bg-light p-4">
-        <div class="alert w-50 alert-danger m-auto"><h3 >ESTADO:</h3>
-        <input type="checkbox"> Terminar portada. </input><br>
-        <input type="checkbox"> Chequear funcionamiento de la barra de navegación.</input>
-        </div>
-
-
-      
+     
 <h3>Breve descripción:</h3>
 <p><a href="https://regina-molares.000webhostapp.com/" target="_blank">Página web</a> de un refugio de gatos callejeros/abandonados con accesos:</p>
 
