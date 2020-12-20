@@ -4,8 +4,7 @@
     por REGINA NOEMÍ MOLARES 
     eMail: programming.regina@gmail.com
 -->
-
-
+<?php# session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,12 +13,13 @@
     <meta name="viewport" content="width=device-width">
     <script src="https://kit.fontawesome.com/f2652a0a74.js" crossorigin="anonymous"></script>
     <title>Regina N. Molares : Trabajo Práctico Final</title>
-    <link rel="icon" type="img/png" href="img/favicon.png">
+    <link rel="icon" type="img/png" href="../img/favicon.png">
     <base target="_self">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" type="text/css" href="../styles/admin.css">
+  
 </head>
 
 <body class="bg-light">
@@ -45,7 +45,7 @@
                     <a class="nav-link" href="voluntarios.php"><i class="fas fa-user-cog"></i> Administrar Voluntarios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" href="#exampleModal"><i class="far fa-question-circle"></i> Acerca</a>
+                    <a class="nav-link" data-toggle="modal" href="#exampleModal"><i class="far fa-question-circle"></i> Acerca de...</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../sections/salir.php"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
@@ -53,10 +53,12 @@
             </ul>
             <span class="navbar-text">
                 <?php if (isset($_SESSION['username'])) { ?>
-                    <a class="nav-link" href="#"><h3><i class="fas fa-user-circle"></i><small> <?= html_entity_decode($_SESSION['username']) ?></small></h3></a>
-                    <?php } else { ?>
-                    
-                    <a class="nav-link" href="access.php"><i class="fas fa-tools"></i>Administración</a> <?php } ?>
+                    <a class="nav-link" href="#">
+                        <h3><i class="fas fa-user-circle"></i><small> <?= html_entity_decode($_SESSION['username']) ?></small></h3>
+                    </a>
+                <?php } else { ?>
+
+                    <a class="nav-link" href="access.php"><i class="fas fa-tools"></i> Administración</a> <?php } ?>
             </span>
         </div>
     </nav>
@@ -75,6 +77,7 @@
                     <p>TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP</p>
                     <p>Diciembre 2020</p>
                     <p>por Regina Noemí Molares </p>
+                    <a href="../index.html">Documentación</a>
                     <div class="text-center">
                         <span> <a class="btn btn-info" href="mailto:programming.regina@gmail.com"><i class="far fa-envelope"></i></a></span>
                         <span> <a class="btn btn-info" href="http://cursofullstackphp.foxit.com.ar/comision2014/Regina_Noemi_Molares/" target="_BLANK"><i class="fas fa-globe"></a></i></span>

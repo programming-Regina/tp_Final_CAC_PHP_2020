@@ -1,3 +1,11 @@
+<!-- 
+    TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+    DICIEMBRE 2020
+    por REGINA NOEMÍ MOLARES 
+    eMail: programming.regina@gmail.com
+-->
+
+
 <?php
 include_once("conexion.php");
 include_once("header_admin.php");

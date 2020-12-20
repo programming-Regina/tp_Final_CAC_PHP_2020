@@ -1,5 +1,9 @@
-$('.contenido').hide();
-$('#nosotros').show();
+/* 
+TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+DICIEMBRE 2020
+por REGINA NOEMÍ MOLARES 
+eMail: programming.regina@gmail.com 
+*/
 
 // valida forms Boostrap
 (function () {
@@ -35,10 +39,4 @@ function show(que) {
     document.getElementById('agregar-vol').style.display = "none";
     document.getElementById('info-vol').style.display = "block";
   }
-}
-
-function sshow(me) {
-  $('.contenido').hide();
-  $('#' + me).show();
-
 }

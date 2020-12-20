@@ -1,28 +1,32 @@
+<!-- 
+    TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+    DICIEMBRE 2020
+    por REGINA NOEMÍ MOLARES 
+    eMail: programming.regina@gmail.com
+-->
+<script src="../scripts/data_publica.js"></script>
 <footer class="page-footer bg-secondary">
     <div class="container text-center text-light mt-3 pt-4">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">PATITAS SOLIDARIAS ASOCIACIÓN CIVIL</h5>
-                    <p>Asociación civil sin fines de lucro, dedicada al rescate y protección de gatos comunitarios.</p>
-                    <small>Nombre de la calle 1235, CABA, Buenos Aires<br>
-                Teléfono: (011) 4555-xxxx</small>
+                <div class="col-md-6 mt-md-0 mt-3" id="contacto">
+                <script>document.getElementById('contacto').innerHTML = data_contacto;</script>
                 </div>
                 <hr class="clearfix w-100 d-md-none pb-3">
                 <div class="col-md-3 mb-md-0 mb-3">
                     <h5 class="text-uppercase">Participá</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="contenidos.php#castrar" onclick="sshow('castrar')">Castrá</a>
+                            <a href="castrar.php" >Castrá</a>
                         </li>
                         <li>
-                            <a href="contenidos.php#denuncias" onclick="sshow('denuncias')">Denuncia Maltratos</a>
+                            <a href="denuncias.php" >Denuncia Maltratos</a>
                         </li>
                         <li>
-                            <a href="contenidos.php#en_adopcion" onclick="sshow('en_adopcion')">Adopta</a>
+                            <a href="en_adopcion.php" >Adopta</a>
                         </li>
                         <li>
-                            <a href="contenidos.php#transito" onclick="sshow('transito')">Hogares de tránsito</a>
+                            <a href="transito.php">Hogares de tránsito</a>
                         </li>
                     </ul>
                 </div>
@@ -30,16 +34,16 @@
                     <h5 class="text-uppercase">Colaborá</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Voluntariado</a>
+                            <a href="voluntariado.php">Voluntariado</a>
                         </li>
                         <li>
-                            <a href="contenidos.php#donaciones" onclick="sshow('donaciones')">Donación monetaria</a>
+                            <a href="donaciones.php">Donación monetaria</a>
                         </li>
                         <li>
-                            <a href="contenidos.php#insumos" onclick="sshow('insumos')">Donación de insumos</a>
+                            <a href="insumos.php">Donación de insumos</a>
                         </li>
                         <li>
-                            <a href="contenidos.php#recepcion" onclick="sshow('recepcion')">Puntos de recepción</a>
+                            <a href="recepcion.php">Puntos de recepción</a>
                         </li>
                     </ul>
                 </div>

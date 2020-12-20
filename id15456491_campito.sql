@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 12-12-2020 a las 23:46:25
+-- Tiempo de generación: 14-12-2020 a las 07:21:25
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.23
 
@@ -84,7 +84,17 @@ INSERT INTO `usuarios` (`id`, `apellido`, `nombre`, `usuario`, `clave`, `celular
 (4, 'Ortega', 'Sebastián', 'sebi', 'voluntario', '(011) 7854-4577', 'sebi@patitassolidarias.org'),
 (7, 'Molares', 'Regina Noemí', 'regina', '$2y$10$.3UUrVrht89JUCTX1mGVaeYmj19xPa50xk1e4rQoENhxEZG24sgba', '(011) 5474-7804', 'regina@patitassolidarias.org'),
 (8, 'Gómez', 'Anahí', 'anahi_g', 'voluntario', '(011) 5487-9654', 'j.bauer@ctu.gov'),
-(9, 'Zapata', 'Alejandro', 'alejandro', 'voluntario', '(011) 4444-4444', 'az.2020@gmail.com');
+(9, 'Zapata', 'Alejandro', 'alejandro', '$2y$10$cO6/rZxPGiF3zFCfezdUievgCyEt7J/FS.AHs57Y6B9rXmM9gckSO', '(011) 4444-4444', 'az.2020@gmail.com'),
+(10, 'unApellido', 'unNombre', 'user01', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(11, 'unApellido', 'unNombre', 'user02', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(12, 'unApellido', 'unNombre', 'user03', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(13, 'unApellido', 'unNombre', 'user04', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(14, 'unApellido', 'unNombre', 'user05', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(15, 'unApellido', 'unNombre', 'user06', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(16, 'unApellido', 'unNombre', 'user07', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(17, 'unApellido', 'unNombre', 'user08', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(18, 'unApellido', 'unNombre', 'user09', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(19, 'unApellido', 'unNombre', 'user10', 'voluntario', '01188888888', 'unEmail@algunaParte.com');
 
 --
 -- Índices para tablas volcadas
@@ -117,7 +127,7 @@ ALTER TABLE `gatos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Restricciones para tablas volcadas

@@ -1,5 +1,14 @@
-<?php 
+<!-- 
+    TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+    DICIEMBRE 2020
+    por REGINA NOEMÍ MOLARES 
+    eMail: programming.regina@gmail.com
+-->
+
+
+<?php
 include("conexion.php");
+include_once("action.php");
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -28,12 +37,12 @@ if (isset($_GET['id'])) {
 
 if (isset($_POST['update'])) {
     $id_gato = $_GET['id'];
-    $nombre = $_POST['nombre'];
+    $nombre = asegurar($_POST['nombre']);
     $sexo = $_POST['sexo'];
-    $color = $_POST['color'];
+    $color = asegurar($_POST['color']);
     $agno = $_POST['nacimiento'];
     $ingreso = $_POST['ingreso'];
-    $hist = $_POST['hist'];
+    $hist = asegurar($_POST['hist']);
     if ($_POST['is_vacunado'] == 1) {
         $vac = $_POST['is_vacunado'];
     } else {
@@ -84,7 +93,7 @@ if (isset($_POST['update'])) {
     mysqli_query($conexion, $query);
 
     # ENVÍO UN MENSAJE PARA MOSTRAR UN ALERTA DE ESTADO A LA PÁGINA INICIAL
-    $_SESSION['message'] = 'Los datos de '.$nombre.' fueron actualizados';
+    $_SESSION['message'] = 'Los datos de ' . $nombre . ' fueron actualizados';
     $_SESSION['message_color'] = 'success';
     header("Location: index_db.php");
 }
@@ -130,7 +139,7 @@ if (isset($_POST['update'])) {
             </div>
             <div class="col">Foto<br>
                 <div class="custom-file mt-2 align-bottom">
-                    <input type="file" class="custom-file-input " id="customFile" name="foto"  value="<?php echo $fotop; ?>">
+                    <input type="file" class="custom-file-input " id="customFile" name="foto" value="<?php echo $fotop; ?>">
                     <label class="custom-file-label" for="customFile"><?php echo $fotop; ?></label>
                 </div>
             </div>

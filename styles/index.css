@@ -1,78 +1,103 @@
+/* 
+TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+DICIEMBRE 2020
+por REGINA NOEMÍ MOLARES 
+eMail: programming.regina@gmail.com 
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap');
 
 .big-one {
-    flex-direction: row;
+    width: 100vw; 
 }
 
-.fotohome,
-.butt-home {
-    height: 100vh;
-    width: 48vw;
-}
-
-.butt-home {
-    padding-right: 20px;
-}
-
-.eyecatcher {
-    background-image: url("../img/home.jpg");
-    height: 100vh;
+.body-container {
+    background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    height: 300px;
+    width: 100vw;
 }
 
-.butt {
-    margin: 30px;
-}
-
-.cardmain-text,
-.cardmain-link {
-    font-size: small;
-}
-
-.cardmain {
-    margin-bottom: 10px;
-}
-.msg1 > #part1 {
+.msg1>#part1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 5em;
-    color: aliceblue;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 2px 2px #ffffff;
 }
 
-.msg1 > #part2 {
+.msg1 {
+    align-self: bottom;
+}
+
+.msg1>#part2 {
     font-family: 'Lobster', cursive;
-    font-size: 3em;
-    color: aliceblue;
+    font-size: 3rem;
+    color: red;
+    text-shadow: 2px 2px #ffffff;
+    margin-top: -20px;
+}
+
+.buttz {
+    flex-direction: row;
+    height: 100%;
+}
+
+.buut {height: 100%;
+    width: 25%;
+    margin: 5px;
+    margin-top: 15px;
 }
 
 @media (max-width: 600px) {
-    .big-one {
+    .body-container {
+        background-image: url("../img/home.jpg");
+    }
+
+    .msg1 {
+        margin-top: auto;
+    }
+
+    .msg1>#part1 {
+        font-size: 1.7rem;
+        color: rgb(246, 247, 239);
+        text-shadow: 2px 2px #000000;
+    }
+
+    .msg1>#part2 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.5rem;
+        color: rgb(246, 250, 11);
+        text-shadow: 2px 2px #000000;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .buttz {
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .flex-item,
-    .fotohome,
-    .butt-home,
-    .butt {
-        width: 100%;
-        margin: auto;
-    }
-
-    .butt-home {
-        padding: 10px;
         height: auto;
     }
 
-    .btn {
-        margin: 3px;
+    .buut {
+        width: 100%;
     }
+}
 
-    .eyecatcher,
-    .fotohome {
-        max-height: 300px;
-    }
+
+
+.reactve-img {
+    z-index: 2;
+}
+
+.text {
+    z-index: 1;
+    padding-left: 10px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color: aliceblue;
+    border: solid;
+    border-color: rgb(126, 178, 223);
+    border-width: 1px;
+    /* margin-top: -400px */
 }

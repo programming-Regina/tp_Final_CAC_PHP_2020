@@ -1,3 +1,10 @@
+<!-- 
+    TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+    DICIEMBRE 2020
+    por REGINA NOEMÍ MOLARES 
+    eMail: programming.regina@gmail.com
+-->
+
 <?php
 include_once("conexion.php");
 include_once("header_admin.php");
@@ -60,15 +67,15 @@ if (isset($_GET['id'])) {
                 </div>
                 <div class="row">
                     <div class="col"><span class="subt">Castrado: </span><?php echo $cast; ?></div>
-                    <div class="col"><span class="subt" ></div>
-                    
+                    <div class="col"><span class="subt"></div>
+
                 </div>
                 <div class="row">
-                <div class="col"><span class="subt">Apto Adopción?: </span><?php echo $adoptable; ?></div>
+                    <div class="col"><span class="subt">Apto Adopción?: </span><?php echo $adoptable; ?></div>
                     <div class="col"><span class="subt">Adoptado: </span><?php echo $adoptado; ?></div>
-                    
+
                 </div>
-                <div class="col"><span class="subt"></span><a class = "btn btn-sm btn-block bg-warning text-dark mt-3" href="index_db.php"><i class="fas fa-home"></i> Volver</a> </div>
+                <div class="col"><span class="subt"></span><a class="btn btn-sm btn-block bg-warning text-dark mt-3" href="index_db.php"><i class="fas fa-home"></i> Volver</a> </div>
             </div>
         </div>
     </div>

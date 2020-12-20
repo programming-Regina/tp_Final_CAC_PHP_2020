@@ -1,3 +1,10 @@
+<!-- 
+    TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+    DICIEMBRE 2020
+    por REGINA NOEMÍ MOLARES 
+    eMail: programming.regina@gmail.com
+-->
+
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
@@ -10,7 +17,6 @@ include_once("action.php");
 
 $query = "SELECT *, usuarios.id, usuarios.apellido, usuarios.nombre FROM gatos JOIN usuarios ON gatos.mentor = usuarios.id ORDER BY nombre;";
 $row = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($conexion));
-
 ?>
 
 <div class="container mt-4" id="tabla-gatos">
@@ -25,7 +31,8 @@ $row = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($
                 </button>
             </div>
 
-        <?php unset($_SESSION['message']);
+        <?php
+            unset($_SESSION['message']);
             unset($_SESSION['message_color']);
         } ?>
     </div>
@@ -63,10 +70,11 @@ $row = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($
                         <td class="text-center align-middle"><?php echo es($gato['adoptado']); ?></td>
                         <td class="text-center align-middle">
                             <h6>
-                                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gatoModal" data-whatever="<?php echo $gato['id_gato']; ?>">ojito</button> -->
+                                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gatoModal" data-whatever="<?php #echo $gato['id_gato']; 
+                                                                                                                                                ?>">ojito</button> -->
                                 <a href="../db/view_gato.php?id=<?php echo $gato['id_gato']; ?>" class="badge badge-info">Ver</a>
                                 <a href="../db/edit_gato.php?id=<?php echo $gato['id_gato']; ?>" class="badge badge-warning">Editar</a>
-                                <a href="../db/delete_gato.php?id=<?php echo $gato['id_gato']; ?>" class="badge badge-danger">Borrar</a>
+                                <a href="#modal2" data-toggle="modal" class="badge badge-danger" onclick="mandaValor(<?php echo $gato['id_gato']; ?>)">Borrar</a>
                             </h6>
                         </td>
                     </tr>
@@ -108,4 +116,38 @@ $row = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($
 </div>
 <!-- FIN MODAL FICHA GATO -->
 
+<!-- MODAL CONFIRMACION -->
+<div class="modal" id="modal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">¡Atención!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form method="GET" action="../db/delete_gato.php">
+                <input type="text" name="mandavalor" id="mandavalor" style="display: none;">
+
+                <div class="modal-body">
+                    <p>¿Confirma borrado? </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" type="submit" name="btnborrar">
+                        Si. Borrar
+                    </button>
+                    <button name="cancel" class="btn btn-secondary" data-dismiss="modal">
+                        No. Cancelar
+                    </button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<!-- FIN MODAL CONFIRMACION -->
+<script>
+    function mandaValor(valor) {
+        document.getElementById('mandavalor').value = valor;
+    }
+</script>
 <?php include_once("footer_admin.php"); ?>

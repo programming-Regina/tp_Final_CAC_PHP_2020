@@ -1,11 +1,19 @@
+<!-- 
+    TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+    DICIEMBRE 2020
+    por REGINA NOEMÍ MOLARES 
+    eMail: programming.regina@gmail.com
+-->
+
 <?php 
 session_start();
 include("conexion.php");
+include_once("action.php");
 
 if (isset($_POST['agregar'])) {
     echo $foto = $_POST['foto'];
-    $nom = $_POST['nombre'];
-    $raza = $_POST['raza'];
+    $nom = asegurar($_POST['nombre']);
+    $raza = asegurar($_POST['raza']);
     $sexo = $_POST['sexo'];
     $agno = $_POST['agno'];
     $ingreso = $_POST['ingreso'];
@@ -14,8 +22,8 @@ if (isset($_POST['agregar'])) {
     } else {
         $foto = $_POST['foto'];
     }    
-    $mentor = $_POST['mentor'];
-    $hist = $_POST['historia'];    
+    $mentor = asegurar($_POST['mentor']);
+    $hist = asegurar($_POST['historia']);    
     if ($_POST['vacunado'] == 1) {
         $vac = 1;
     } else {
@@ -75,6 +83,6 @@ if (isset($_POST['agregar'])) {
 
     $_SESSION['message'] = 'El registro se guardó correctamente.';
     $_SESSION['message_color'] = 'success';
-    echo "<script>location.href='ingreso_gato.php'</script>"; 
+    echo "<script>location.href='index_db.php'</script>"; 
    # header("Location: ingreso_gato.php");
-} include_once('footer_admin.php'); ?>
+} include_once('footer_admin.php');

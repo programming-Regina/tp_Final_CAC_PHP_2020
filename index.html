@@ -1,0 +1,130 @@
+<!-- 
+    TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP
+    DICIEMBRE 2020
+    por REGINA NOEMÍ MOLARES 
+    eMail: programming.regina@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regina N. Molares - Trabajo Práctico / Documentación</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="img/png" href="../img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="background-color: aliceblue; font-family: 'Titillium Web', sans-serif;">
+    <div class="container-fluid d-flex flex-row bg-info text-left p-3 align-items-center">
+        <span>
+            <div style="background-image: url('img/ops.png'); 
+                        background-size: cover;
+                        width:120px; 
+                        height:120px; 
+                        border-radius: 60px; 
+                        border-style: solid; 
+                        border-width: 3px; 
+                        border-color: aliceblue;
+                        margin-left:40px;">
+            </div>
+        </span>
+        <span class="ml-4" style="color: aliceblue;">
+            <h3>TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP</h3>
+            <h5>DICIEMBRE 2020</h5>
+            <h4>por <a href="mailto:programming.regina@gmail.com" style="color: white;">Regina Noemí Molares</a></h4>
+        </span>
+    </div>
+    <div class="container bg-light p-4">
+
+        <ol>
+            <h2>
+                <li>Breve descripción:</li>
+            </h2>
+
+            <p><a class="text-info" href="tp.php" target="_blank">Página web</a> de
+                un refugio de gatos callejeros/abandonados con accesos:</p>
+            <ul>
+                <li>Al público en general (responsive):</li>
+                <ul>
+                    <li>Secciones:</li>
+                    <ul>
+                        <li>Página principal, Institucional, Adopción, Salva Vidas, Participá, Donaciones</li>
+                    </ul>
+                    <li> Algunas características:</li>
+                    <ul>
+                        <li>Estilos CSS/Bootstrap, con algunos ajustes en Javascript. (Accordion, iframe con mapas)
+                        </li>
+                        <li>Formulario de contacto funcional con envío por email.</li>
+                        <li>Sección Adoptá/En Adopción muestra candidatos levantados de la base de datos.</li>
+                    </ul>
+                </ul>
+
+                <li>Privado, pensado para trabajo de escritorio (no responsive)</li>
+                <ul>
+                    <li>Login al área administrativa con sesión de usuario y clave encriptada (algoritmo CRYPT_BLOWFISH)
+                    <li>Permite operaciones CRUD sobre:
+                        <ul>
+                            <li>tabla de gatos pensionados (subida de fotos funcional)</li>
+                            <li>tabla de voluntarios (asigna una clave de acceso por default que debe cambiarse al
+                                primer acceso)</li>
+                        </ul>
+                </ul>
+            </ul>
+
+            <h2>
+                <li>Tecnologías:</li>
+            </h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>SQL</li>
+            </ul>
+            <ul>
+                <li>Librerías / Frameworks / Plugins / Scripts no propios:</li>
+                <ul>
+                    <li>Boostrap 4, jQuery, Popper</li>
+                    <li>
+                        <a href="https://github.com/Johann-S/bs-custom-file-input" target="_blank">bs-custom-file-:</a>
+                        resuelve el
+                        problema del input tipo file de BS :
+                    </li>
+                    <li>Parte de los textos/contenidos pertenecen a la organización Proyecto 4 Patas y Miao Cats
+                    </li>
+                </ul>
+            </ul>
+            <h2>
+                <li>
+                    Cuentas de usuario para revisores
+                </li>
+            </h2>
+            <p>Se crearon 10 cuentas de usuario para quienes revisen este trabajo:</p>
+            <ul>
+                <li>Nombre de usuario: user01 consecutivos hasta user10</li>
+                <li>Contraseña: voluntario</li>
+            </ul>
+            <p>El sistema exige se cambie la contraseña con el primer acceso, pero las claves se resetearán diario, por
+                lo que las cuentas de prueba estarán disponibles permanentemente mientras dure el período de revisión.
+            </p>
+        </ol>
+
+
+        <p>Este proyecto será adaptado a las necesidades y ofrecido en donación a "El Campito Felino".</p>
+        <p>Secciones en desarrollo - Etapa 2: Novedades, Prensa y Difusión, Tienda, todas secciones actualizables por
+            usuarios
+            con acceso.</p>
+        <button class="btn btn-block btn-danger mt-3" onclick="window.open('tp.php')">Ver Trabajo el Práctico
+            online</button>
+        <button class="btn btn-block btn-success mt-3"
+            onclick="window.open('https://github.com/programming-Regina/tp_Final_CAC_PHP_2020')">Obtener códigos del
+            Trabajo Práctico</button>
+    </div>
+
+</body>
+
+</html>
