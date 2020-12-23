@@ -55,7 +55,7 @@
              </div>
              <div class="col">Foto<br>
                  <div class="custom-file mt-2">
-                     <input type="file" class="custom-file-input align-bottom" name="foto" id="customFile" value="0.jpg">
+                     <input type="file" class="custom-file-input align-bottom" name="userfile" id="customFile" value="0.jpg">
                      <label class="custom-file-label" for="customFile">Subir archivo</label>
                  </div>
              </div>

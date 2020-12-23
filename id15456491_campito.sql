@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 14-12-2020 a las 07:21:25
+-- Tiempo de generación: 23-12-2020 a las 06:51:33
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.23
 
@@ -51,7 +51,7 @@ CREATE TABLE `gatos` (
 
 INSERT INTO `gatos` (`id_gato`, `nom_gato`, `sexo`, `raza_color`, `agno_nacim`, `fecha_ingreso`, `historia`, `vacunado`, `desparasitado`, `castrado`, `foto`, `mentor`, `apto_adopc`, `adoptado`) VALUES
 (1, 'Alvaro', 'Macho', 'Mestizo tuxedo. Botitas y punta de la cola blancas.', 2014, '2020-12-15', 'Encontrado en un garage de Caballito. Creemos tuvo un hogar.', 1, 1, 1, '1.jpg', 4, 1, 0),
-(2, 'Lunita', 'Hembra', 'Mestiza tricolor carey', 2018, '2020-12-22', 'Nacida en el refugio. Sus hermanitos fueron todos adoptados.', 0, 0, 0, '2.jpg', 1, 0, 0),
+(2, 'Lunita', 'Hembra', 'Mestiza tricolor carey', 2018, '2020-12-22', 'Nacida en el refugio. Sus hermanitos fueron todos adoptados.', 0, 0, 0, '2.jpg', 3, 0, 0),
 (3, 'Hannah', 'Hembra', 'Mestiza negra', 2018, '2020-10-12', 'Su mamá falleció y nadie de la familia la quiso. Socializada y mansa. Se deja alzar.', 1, 0, 1, '3.jpg', 3, 1, 0),
 (4, 'Mr Chip', 'Macho', 'Mestizo atigrado naranja', 2016, '2020-01-13', 'Abandonado por mudanza. Muy buen estado y sociable. Vocaliza mucho.', 1, 1, 1, '4.jpg', 1, 0, 0),
 (5, 'Doña Pataca', 'Hembra', 'Mestiza naranja con manchas blancas. Pelo largo.', 2015, '2020-02-03', 'Está perdida o fue abandonada cerca de la fecha de ingreso. Nadie preguntó por ella. Muy buen estado de salud. Poco sociable, pero no agresiva.', 1, 1, 1, '5.jpg', 2, 1, 0),
@@ -79,7 +79,7 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id`, `apellido`, `nombre`, `usuario`, `clave`, `celular`, `email`) VALUES
 (1, 'Álvarez', 'Josefina', 'joseal', 'voluntario', '(011) 4521-5698', 'josefa2@patitassolidarias.org'),
-(2, 'Figueredo', 'Soledad', 'solefi', 'voluntario', '(011) 5412-6547', 'solefi@patitassolidarias.org'),
+(2, 'Figueredo', 'Soledad', 'solefi', '$2y$10$Q3m27mSkd8oUVhjuf8YAcOZPSld4KOuoe5hSxsoeMS.I07q9jWap2', '(011) 5412-6547', 'solefi@patitassolidarias.org'),
 (3, 'Ramírez', 'Paula', 'pauram', 'voluntario', '(011) 8745-5412', 'pauram@patitassolidarias.org'),
 (4, 'Ortega', 'Sebastián', 'sebi', 'voluntario', '(011) 7854-4577', 'sebi@patitassolidarias.org'),
 (7, 'Molares', 'Regina Noemí', 'regina', '$2y$10$.3UUrVrht89JUCTX1mGVaeYmj19xPa50xk1e4rQoENhxEZG24sgba', '(011) 5474-7804', 'regina@patitassolidarias.org'),
@@ -121,7 +121,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `gatos`
 --
 ALTER TABLE `gatos`
-  MODIFY `id_gato` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_gato` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

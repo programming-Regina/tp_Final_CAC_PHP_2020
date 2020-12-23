@@ -30,6 +30,7 @@ if (isset($_POST['submit-contact'])) {
         'Reply-To: ' . $email_from . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
-    header("Location: gracias.php");
+    #header("Location: gracias.php");
+    echo "<script>location.href='gracias.php'</script>"; 
 }
 ?>
