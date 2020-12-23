@@ -55,7 +55,7 @@ INSERT INTO `gatos` (`id_gato`, `nom_gato`, `sexo`, `raza_color`, `agno_nacim`, 
 (3, 'Hannah', 'Hembra', 'Mestiza negra', 2018, '2020-10-12', 'Su mamá falleció y nadie de la familia la quiso. Socializada y mansa. Se deja alzar.', 1, 0, 1, '3.jpg', 3, 1, 0),
 (4, 'Mr Chip', 'Macho', 'Mestizo atigrado naranja', 2016, '2020-01-13', 'Abandonado por mudanza. Muy buen estado y sociable. Vocaliza mucho.', 1, 1, 1, '4.jpg', 1, 0, 0),
 (5, 'Doña Pataca', 'Hembra', 'Mestiza naranja con manchas blancas. Pelo largo.', 2015, '2020-02-03', 'Está perdida o fue abandonada cerca de la fecha de ingreso. Nadie preguntó por ella. Muy buen estado de salud. Poco sociable, pero no agresiva.', 1, 1, 1, '5.jpg', 2, 1, 0),
-(7, 'Atún', 'Macho', 'Atigrado gris, oreja derecha recortada', 2016, '2020-12-04', '', 0, 0, 1, '0.jpg', 3, 0, 0);
+(6, 'Atún', 'Macho', 'Atigrado gris, oreja derecha recortada', 2016, '2020-12-04', '', 0, 0, 1, '6.jpg', 3, 0, 0);
 
 -- --------------------------------------------------------
 
