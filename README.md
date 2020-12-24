@@ -4,6 +4,7 @@
     por REGINA NOEMÍ MOLARES 
     eMail: programming.regina@gmail.com
 -->
+![alt text](https://github.com/programming-Regina/tp_Final_CAC_PHP_2020/blob/main/captura.png?raw=true)
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +37,7 @@
             <h4>por <a href="mailto:programming.regina@gmail.com" style="color: white;">Regina Noemí Molares</a></h4>
         </span> 
     </div>
-    ![alt text](https://raw.githubusercontent.com/programming-Regina/tp_Final_CAC_PHP_2020/blob/main/captura.png)
+
 <h3>Breve descripción:</h3>
 <p><a href="https://regina-molares.000webhostapp.com/" target="_blank">Página web</a> de un refugio de gatos callejeros/abandonados con accesos:</p>
 
