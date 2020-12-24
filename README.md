@@ -39,7 +39,7 @@
     </div>
 
 <h3>Breve descripción:</h3>
-<p><a href="https://regina-molares.000webhostapp.com/" target="_blank">Página web</a> de un refugio de gatos callejeros/abandonados con accesos:</p>
+<p>Página web de un refugio de gatos callejeros/abandonados con accesos:</p>
 
 <p> <b>Al público en general (responsive):</b></p>
    * Secciones:<br>
@@ -63,6 +63,6 @@
 - SQL<br>
 <h3>Librerías / Frameworks / Plugins / Scripts no propios:</h3>
 - Boostrap 4, jQuery, Popper<br>
-- bs-custom-file-: resuelve el problema del input tipo file de BS <br>
+- <a href="https://github.com/Johann-S/bs-custom-file-input" target="_blank">bs-custom-file-</a>: resuelve el problema del input tipo file de BS <br>
 - Parte de los textos/contenidos pertenecen a la organización Proyecto 4 Patas y Miao Cats<br><br>
 <p>Este proyecto será adaptado a las necesidades y ofrecido en donación a "El Campito Felino".</p>
