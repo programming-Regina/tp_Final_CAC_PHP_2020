@@ -5,6 +5,8 @@ por REGINA NOEMÍ MOLARES
 eMail: programming.regina@gmail.com 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -153,6 +155,10 @@ footer a:hover {
   #gracias {
     width: 50%;
   }
+.precio {
+  font-family: 'Fjalla One', sans-serif;
+
+}
 
   .bg-image {
     background-image: url("../img/bg.jpg");

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 23-12-2020 a las 06:51:33
+-- Tiempo de generación: 24-12-2020 a las 06:55:43
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.23
 
@@ -60,6 +60,37 @@ INSERT INTO `gatos` (`id_gato`, `nom_gato`, `sexo`, `raza_color`, `agno_nacim`, 
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `tienda`
+--
+
+CREATE TABLE `tienda` (
+  `id_art` int(11) NOT NULL,
+  `articulo` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `descripcion` varchar(1000) COLLATE utf8_spanish_ci NOT NULL,
+  `foto_art` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
+  `precio` double NOT NULL,
+  `contacto` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci NOT NULL,
+  `en_stock` tinyint(1) NOT NULL DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `tienda`
+--
+
+INSERT INTO `tienda` (`id_art`, `articulo`, `descripcion`, `foto_art`, `precio`, `contacto`, `en_stock`) VALUES
+(1, 'Gatitos de madera', 'Porta-anillos o simplemente decorativos. 10 cm de alto', 'gatitos.jpg', 200, 'María: m_aniello@gmail.com', 1),
+(2, 'Llaveros', 'Fabricados en madera. 4 cm. Consultar colores.', 'llaveros.jpg', 150, 'Jorge: 011 5412-2254. Zona Congreso, CABA', 1),
+(3, 'Calendarios', 'Calendarios 2021, con fotos de los gatitos del refugio. Varios modelos', 'calendarios.jpg', 200, 'Valeria (sólo WhatsApp): 011 8888-8888. ', 1),
+(4, 'Reloj', 'Reloj de pared pintado a mano. Lleva 1 pila AA. 25 cm de diámetro. Consultar modelos.', 'reloj.jpg', 500, 'Zulema: 011 6665-5555', 1),
+(5, 'Portarrollos', 'Portarrollos para papel higiénico. Varios modelos.', 'portarrollo.jpg', 350, 'Selva: selva_2020@gmmaik.com', 1),
+(6, 'Delantal', 'Delantal de cocina con motivos gatitos. Tela repele manchas.', 'delantal.jpg', 600, 'Sandra: 011 8885-9999 A partir de mediodía', 1),
+(7, 'Juego de cerámica', 'Jarrito y plato pintados a mano. Varios modelos y colores.', 'jarrito_plato.jpg', 700, 'Aníbal: el_number_one@topolino.com.ar', 1),
+(8, 'Cortina para baño', 'Cortina para ducha, con protector antihongos.', 'cortina.jpg', 1100, 'Jimena: 011 5222-2222 Por la tarde.', 1),
+(9, 'Latas multiuso', 'Latas multipropósito. 20 x 13 x 10 cm. Diversos motivos', 'latas.jpg', 300, 'Ángel: angelp_2514@cielo.com.ar', 1);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -108,6 +139,12 @@ ALTER TABLE `gatos`
   ADD KEY `mentor` (`mentor`);
 
 --
+-- Indices de la tabla `tienda`
+--
+ALTER TABLE `tienda`
+  ADD PRIMARY KEY (`id_art`);
+
+--
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -122,6 +159,12 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `gatos`
   MODIFY `id_gato` smallint(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT de la tabla `tienda`
+--
+ALTER TABLE `tienda`
+  MODIFY `id_art` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

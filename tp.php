@@ -26,7 +26,7 @@
 
 <body>
   <div class="container-fluid bg-dark">
-    <nav class="navbar navbar-dark bg-dark"><span class="navbar-brand  text-light mb-0 h1"><i class="fas fa-paw"></i> Refugio Patitas Solidarias </span>
+    <nav class="navbar navbar-dark bg-dark"><span class="navbar-brand  text-light mb-0 h1"><i class="fas fa-paw"></i> <a class="text-light" href="sections/nosotros.php"> Patitas Solidarias <small>-- Conocenos</small></a> </span>
     </nav>
   </div>
 
@@ -83,12 +83,30 @@
       <img class="reactve-img" src="img/bebe4.jpg" height="200px" style="object-fit: cover;" title="Gatito" alt="Gatito">
       <div class="text">
         <ul>
-          <li><a href="#" data-toggle="tooltip" data-placement="top" title="Próximamente">Novedades</a></li>
+          <li><a href="#" data-toggle="tooltip" data-placement="top" title="Próximamente">Novedades </a><span class="text-muted"><small> al 23/12/20</small></span></li>
           <li><a href="#" data-toggle="tooltip" data-placement="top" title="Próximamente">Prensa y difusión</a></li>
-          <li><a href="#" data-toggle="tooltip" data-placement="top" title="Próximamente">Tienda</a></li>
+          <li><a href="sections/tienda.php" data-toggle="tooltip" data-placement="top" title="En mejoras!">Tienda</a></li>
         </ul>
       </div>
     </div>
+
+
+
+  </div>
+
+  <div class="container sponsors text-center p-4">
+   
+      <h3>Empresas que nos apadrinan</h3>
+  
+    <div class="container d-flex justify-content-around align-items-stretch flex-wrap mt-2 p-4">
+      <div class="sponsor"><img src="img/sponsors/logo1.png"></div>
+      <div class="sponsor"><img src="img/sponsors/logo2.png"></div>
+      <div class="sponsor"><img src="img/sponsors/logo3.png"></div>
+      <div class="sponsor"><img src="img/sponsors/logo4.png"></div>
+      <div class="sponsor"><img src="img/sponsors/logo5.png"></div>
+      <div class="sponsor"><img src="img/sponsors/logo6.png"></div>
+    </div>
+
   </div>
 
   <footer class="page-footer bg-secondary">

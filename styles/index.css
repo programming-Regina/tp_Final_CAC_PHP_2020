@@ -41,13 +41,28 @@ eMail: programming.regina@gmail.com
 
 .buttz {
     flex-direction: row;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .buut {height: 100%;
     width: 25%;
     margin: 5px;
     margin-top: 15px;
+}
+
+.reactve-img {
+    z-index: 2;
+}
+
+.text {
+    z-index: 1;
+    padding-left: 10px;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-color: aliceblue;
+    border: solid;
+    border-color: rgb(126, 178, 223);
+    border-width: 1px;   
 }
 
 @media (max-width: 600px) {
@@ -82,22 +97,10 @@ eMail: programming.regina@gmail.com
     .buut {
         width: 100%;
     }
+    .sponsor {
+        margin-bottom:20px;
+    }
 }
 
 
 
-.reactve-img {
-    z-index: 2;
-}
-
-.text {
-    z-index: 1;
-    padding-left: 10px;
-    padding-top:40px;
-    padding-bottom:40px;
-    background-color: aliceblue;
-    border: solid;
-    border-color: rgb(126, 178, 223);
-    border-width: 1px;
-    /* margin-top: -400px */
-}

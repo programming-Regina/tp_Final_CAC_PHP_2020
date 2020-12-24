@@ -39,25 +39,25 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Adoptá
+              Adoptar
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="requisitos.php" >Requisitos de adopción</a>
-              <a class="dropdown-item" href="en_adopcion.php" >En adopción</a>
-              <a class="dropdown-item" href="contacto.php" >Adoptá</a>
+              <a class="dropdown-item" href="requisitos.php" >Requisitos para adoptar</a>
+              <a class="dropdown-item" href="en_adopcion.php" >Gatitos en adopción</a>
+              <a class="dropdown-item" href="contacto.php" >Adoptar</a>
             </div>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Salvá Vidas
+              Salvar Vidas
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="castrar.php" >Castrá</a>
-              <a class="dropdown-item" href="denuncias.php" >Denunciá el maltrato</a>
+              <a class="dropdown-item" href="castrar.php" >Por qué castrar</a>
+              <a class="dropdown-item" href="denuncias.php" >Denunciar el maltrato</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Participá
+              Participar
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="voluntariado.php" >Voluntariado</a>
@@ -69,11 +69,12 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Donaciones
+              Colaborar
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="donaciones.php" >Aportes económicos</a>
               <a class="dropdown-item" href="insumos.php" >Donación de insumos</a>
+              <a class="dropdown-item" href="tienda.php" >Tienda</a>
               <a class="dropdown-item" href="recepcion.php" >Puntos de recepción</a>
             </div>
           </li>
