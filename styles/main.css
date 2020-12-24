@@ -64,7 +64,8 @@ blockquote:after {
 }
 
 #adopta,
-#nosotros {
+#nosotros,
+#tienda {
   background-color: #fdffb6;
 }
 
@@ -77,7 +78,8 @@ blockquote:after {
   background-color: #9bf6ff;
 }
 
-#donaciones {
+#donaciones,
+#novedades {
   background-color: #a0c4ff;
 }
 
@@ -85,7 +87,8 @@ blockquote:after {
   background-color: #bdb2ff;
 }
 
-#recepcion {
+#recepcion,
+#prensa {
   background-color: #ffc6ff;
 }
 
@@ -155,10 +158,11 @@ footer a:hover {
   #gracias {
     width: 50%;
   }
-.precio {
-  font-family: 'Fjalla One', sans-serif;
 
-}
+  .precio {
+    font-family: 'Fjalla One', sans-serif;
+
+  }
 
   .bg-image {
     background-image: url("../img/bg.jpg");

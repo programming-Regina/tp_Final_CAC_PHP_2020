@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 24-12-2020 a las 06:55:43
+-- Tiempo de generación: 24-12-2020 a las 09:50:32
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.23
 
@@ -21,6 +21,36 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `id15456491_campito`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `difusion`
+--
+
+CREATE TABLE `difusion` (
+  `id_nota` int(11) NOT NULL,
+  `titulo` varchar(500) COLLATE utf8_spanish_ci NOT NULL,
+  `descripcion` varchar(1000) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `link` varchar(200) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `fecha` timestamp NULL DEFAULT current_timestamp(),
+  `foto` varchar(200) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `novedad` tinyint(1) DEFAULT NULL,
+  `prensa` tinyint(1) DEFAULT NULL,
+  `obsoleto` tinyint(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `difusion`
+--
+
+INSERT INTO `difusion` (`id_nota`, `titulo`, `descripcion`, `link`, `fecha`, `foto`, `novedad`, `prensa`, `obsoleto`) VALUES
+(1, 'Habiliten formalmente el Campito Felino', 'Estamos pidiendo que el terreno esté a disposición de los gatitos...', 'https://www.change.org/p/habiliten-formalmente-el-campitofelino-horaciorlarreta-yolosdefiendo', '2020-12-24 08:27:15', 'change01.jpg', 0, 1, 0),
+(2, 'El Campito Felino', 'Un centro de rescate y adopción, con el solo fin de salvar animales y prolongarles la vida...', 'https://expertas.supermercadosdia.com.ar/el-campito-felino/', '2020-12-24 08:27:15', 'difusion01.jpg', 0, 1, 0),
+(3, 'Arturo Pozzali visitó el Campito Felino', 'El Defensor del Pueblo adjunto se acercó a la ONG de la Comuna 13 para extender la ayuda de la Defensoría...', 'https://www.defensoria.org.ar/noticias/arturo-pozzali-visito-el-campito-felino/', '2018-07-31 03:00:00', 'defensoria01.png', 0, 1, 0),
+(4, 'Quieren desalojar un refugio para gatos de Belgrano', 'Se trata de el Campito Felino, que funciona en el mismo lugar hace dos décadas...', 'https://tn.com.ar/sociedad/quieren-desalojar-un-refugio-para-gatos-de-belgrano_953743/', '2020-12-24 08:32:31', 'desalojar01.jpg', 0, 1, 0),
+(5, 'Calendarios El Campito Felino 2021', NULL, NULL, '2020-10-24 08:32:31', 'calendarios.jpg', 1, 0, 0),
+(6, 'Colecta Solidaria', 'Estaremos recolectando artículos reciclables, donaciones y habrá venta de calendarios, remeras y artículos artesanales de nuestra tienda.', NULL, '2020-12-13 08:33:37', 'colecta.jpg', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -132,6 +162,12 @@ INSERT INTO `usuarios` (`id`, `apellido`, `nombre`, `usuario`, `clave`, `celular
 --
 
 --
+-- Indices de la tabla `difusion`
+--
+ALTER TABLE `difusion`
+  ADD PRIMARY KEY (`id_nota`);
+
+--
 -- Indices de la tabla `gatos`
 --
 ALTER TABLE `gatos`
@@ -153,6 +189,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `difusion`
+--
+ALTER TABLE `difusion`
+  MODIFY `id_nota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `gatos`

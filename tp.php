@@ -4,7 +4,16 @@
     por REGINA NOEMÍ MOLARES 
     eMail: programming.regina@gmail.com
 -->
-
+<?php include_once 'db/conexion.php';
+   
+   $query = "SELECT fecha FROM difusion
+   WHERE prensa = 1  AND fecha  = (
+       SELECT MAX(fecha)
+       FROM difusion
+   );";
+   $result = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($conexion));
+   $row = mysqli_fetch_assoc($result);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +35,7 @@
 
 <body>
   <div class="container-fluid bg-dark">
-    <nav class="navbar navbar-dark bg-dark"><span class="navbar-brand  text-light mb-0 h1"><i class="fas fa-paw"></i> <a class="text-light" href="sections/nosotros.php"> Patitas Solidarias <small>-- Conocenos</small></a> </span>
+    <nav class="navbar navbar-dark bg-dark"><span class="navbar-brand  text-light mb-0 h1"><i class="fas fa-paw"></i> <a class="text-light" href="sections/news.php"> Patitas Solidarias <small>-- Conocenos</small></a> </span>
     </nav>
   </div>
 
@@ -79,25 +88,22 @@
 
 
     <div class="buut d-flex flex-column">
-      <button class="btn btn-danger  btn-block text-light" onclick="location.href='sections/nosotros.php'">Conocé más</button>
+      <button class="btn btn-danger btn-block text-light" onclick="location.href='sections/nosotros.php'">Conocé más</button>
       <img class="reactve-img" src="img/bebe4.jpg" height="200px" style="object-fit: cover;" title="Gatito" alt="Gatito">
       <div class="text">
         <ul>
-          <li><a href="#" data-toggle="tooltip" data-placement="top" title="Próximamente">Novedades </a><span class="text-muted"><small> al 23/12/20</small></span></li>
-          <li><a href="#" data-toggle="tooltip" data-placement="top" title="Próximamente">Prensa y difusión</a></li>
-          <li><a href="sections/tienda.php" data-toggle="tooltip" data-placement="top" title="En mejoras!">Tienda</a></li>
+          <li><a href="sections/news.php" >Novedades </a><span class="text-muted"><small> (al <?= date("d/m/Y", strtotime($row['fecha']));?>)</small></span></li>
+          <li><a href="sections/news.php#prensa" >Prensa y difusión</a></li>
+          <li><a href="sections/tienda.php" >Tienda</a></li>
         </ul>
       </div>
     </div>
-
-
-
   </div>
 
   <div class="container sponsors text-center p-4">
-   
-      <h3>Empresas que nos apadrinan</h3>
-  
+
+    <h3>Empresas que nos apadrinan</h3>
+
     <div class="container d-flex justify-content-around align-items-stretch flex-wrap mt-2 p-4">
       <div class="sponsor"><img src="img/sponsors/logo1.png"></div>
       <div class="sponsor"><img src="img/sponsors/logo2.png"></div>

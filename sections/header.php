@@ -34,25 +34,36 @@
     <span class="ml-auto">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item active">
+<!--           <li class="nav-item active">
             <a class="nav-link" href="nosotros.php">Nosotros <span class="sr-only">(current)</span></a>
+          </li> -->
+          <li class="nav-item nav-item active dropdown">
+            <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdownMenuLink"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Conocenos<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="news.php">Novedades</a>
+              <a class="dropdown-item" href="nosotros.php">Nosotros</a>
+              <a class="dropdown-item" href="news.php#prensa">Prensa y difusión</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Adoptar
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="requisitos.php" >Requisitos para adoptar</a>
-              <a class="dropdown-item" href="en_adopcion.php" >Gatitos en adopción</a>
-              <a class="dropdown-item" href="contacto.php" >Adoptar</a>
+              <a class="dropdown-item" href="requisitos.php">Requisitos para adoptar</a>
+              <a class="dropdown-item" href="en_adopcion.php">Gatitos en adopción</a>
+              <a class="dropdown-item" href="contacto.php">Adoptar</a>
             </div>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Salvar Vidas
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="castrar.php" >Por qué castrar</a>
-              <a class="dropdown-item" href="denuncias.php" >Denunciar el maltrato</a>
+              <a class="dropdown-item" href="castrar.php">Por qué castrar</a>
+              <a class="dropdown-item" href="denuncias.php">Denunciar el maltrato</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -60,22 +71,22 @@
               Participar
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="voluntariado.php" >Voluntariado</a>
+              <a class="dropdown-item" href="voluntariado.php">Voluntariado</a>
               <a class="dropdown-item" href="transito.php">Hogares de tránsito</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto.php" >Contacto</a>
+            <a class="nav-link" href="contacto.php">Contacto</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Colaborar
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="donaciones.php" >Aportes económicos</a>
-              <a class="dropdown-item" href="insumos.php" >Donación de insumos</a>
-              <a class="dropdown-item" href="tienda.php" >Tienda</a>
-              <a class="dropdown-item" href="recepcion.php" >Puntos de recepción</a>
+              <a class="dropdown-item" href="donaciones.php">Aportes económicos</a>
+              <a class="dropdown-item" href="insumos.php">Donación de insumos</a>
+              <a class="dropdown-item" href="tienda.php">Tienda</a>
+              <a class="dropdown-item" href="recepcion.php">Puntos de recepción</a>
             </div>
           </li>
           <li class="nav-item">

@@ -5,7 +5,11 @@
     eMail: programming.regina@gmail.com
 -->
 
-<?php include('header.php') ?>
+<?php 
+include_once 'header.php';
+include_once '../db/conexion.php'; 
+?>
+
 
 <div class="container-fluid contenido w-100" id="en_adopcion">
     <div class="container">
@@ -14,7 +18,7 @@
             <div class="container-fluid">
                 <div class="card-deck p-2">
                     <?php
-                    $conexion = mysqli_connect("localhost", "root", "", "campito");
+                    #$conexion = mysqli_connect("localhost", "root", "", "campito");
                     #$conexion = mysqli_connect("localhost", "id15456491_root", "H_3zv5b9YN-wg|lM", "id15456491_campito");
                     $query = "SELECT nom_gato, sexo, raza_color, agno_nacim, vacunado, desparasitado, castrado, historia, foto FROM gatos WHERE apto_adopc = 1 ORDER BY nom_gato;";
                     $row = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($conexion));
