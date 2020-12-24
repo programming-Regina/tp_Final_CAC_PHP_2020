@@ -30,7 +30,7 @@ if (isset($_POST['alta_item'])) {
                             contacto,
                             en_stock) VALUES (  '$art','$desc','$foto','$precio','$cont','$stock' )";
     $resultado = mysqli_query($conexion, $query);
-    $_SESSION['message'] = 'El registro de guardó correctamente.';
+    $_SESSION['message'] = 'El registro se guardó correctamente.';
     $_SESSION['message_color'] = 'success';
     header("Location: admin_tienda.php");
 

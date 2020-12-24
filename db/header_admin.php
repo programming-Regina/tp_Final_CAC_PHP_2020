@@ -48,7 +48,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="voluntarios.php">Voluntarios </a>
-                        <a class="dropdown-item" href="#">Novedades y difusión</a>
+                        <a class="dropdown-item" href="admin_news.php">Novedades y difusión</a>
                         <a class="dropdown-item" href="admin_tienda.php">Tienda</a>
                     </div>
                 </li>
