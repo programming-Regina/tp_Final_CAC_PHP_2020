@@ -7,11 +7,14 @@
 
 <?php
 session_start();
-include("conexion.php");
-include_once("action.php");
+include_once "conexion.php";
+include_once "action.php";
+include_once "upload_foto.php";
 
 if (isset($_POST['agregar'])) {
-    $foto = "0.jpg"; // si no se selecciona una foto para subir
+
+    $foto = subir_foto("0.jpg","../img/adopcion/", $_FILES['userfile']['size'],$_FILES['userfile']['name']);
+  /*   $foto = "0.jpg"; // si no se selecciona una foto para subir
 
     $error = "";
     $folder = "../img/adopcion/";
@@ -50,7 +53,7 @@ if (isset($_POST['agregar'])) {
         } else {
             #echo "Error! El tamaño supera el máximo permitido por el servidor. Inténtelo de nuevo."; // error
         }
-    }
+    } */
 
     $nom = asegurar($_POST['nombre']);
     $raza = asegurar($_POST['raza']);

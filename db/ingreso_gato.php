@@ -6,7 +6,6 @@
 -->
 
  <?php
-    session_start();
     include_once("conexion.php");
     include_once("header_admin.php");
     

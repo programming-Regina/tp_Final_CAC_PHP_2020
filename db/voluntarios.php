@@ -6,9 +6,9 @@
 -->
 
 <?php
-session_start();
-include_once("conexion.php");
 include_once("header_admin.php");
+include_once("conexion.php");
+
 
 $query = "SELECT * FROM usuarios";
 $result = mysqli_query($conexion, $query) or die("database error:" . mysqli_error($conexion));
@@ -97,8 +97,8 @@ $result = mysqli_query($conexion, $query) or die("database error:" . mysqli_erro
             <div class="row p-4" id="info-vol">
                 <div class="col">
                     <h3> Mencionar a los nuevos voluntarios que:</h3>
-                    <ul>
-                        <li>recuerden cambiar su clave la primera vez que accedan al sistema</li>
+                    <ul><li>la clave por defecto es "voluntario" (en minúsculas)</li>
+                        <li>advertir que deben cambiar la clave la primera vez que accedan al sistema</li>
                         <li>el encuentro quincenal se realiza el primer y tercer domingo de cada mes</li>
                         <li>son bienvenidos los voluntarios eventuales para tareas de mantenimiento semanal</li>
                         <li>los requisitos para adoptantes citados en nuestra web con excluyentes y sn excepción</li>

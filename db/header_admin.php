@@ -4,7 +4,7 @@
     por REGINA NOEMÍ MOLARES 
     eMail: programming.regina@gmail.com
 -->
-<?php# session_start();?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +24,7 @@
 
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <a class="navbar-brand" href="#"><i class="fas fa-paw"></i> Refugio Patitas Solidarias </a>
+        <a class="navbar-brand" href="../tp.php"><i class="fas fa-paw"></i> Refugio Patitas Solidarias </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,8 +41,16 @@
                     </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="voluntarios.php"><i class="fas fa-user-cog"></i> Administrar Voluntarios</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-tools"></i> Administrar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="voluntarios.php">Voluntarios </a>
+                        <a class="dropdown-item" href="#">Novedades y difusión</a>
+                        <a class="dropdown-item" href="admin_tienda.php">Tienda</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="modal" href="#exampleModal"><i class="far fa-question-circle"></i> Acerca de...</a>

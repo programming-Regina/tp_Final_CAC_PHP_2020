@@ -8,8 +8,9 @@
 
 <?php
 session_start();
-include("conexion.php");
-include_once("action.php");
+include_once "conexion.php";
+include_once "action.php";
+include_once "upload_foto.php";
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -37,7 +38,9 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update'])) {
-    $error = "";
+    $foto = subir_foto("0.jpg","../img/adopcion/", $_FILES['userfile']['size'],$_FILES['userfile']['name']);
+    
+    /* $error = "";
     $folder = "../img/adopcion/";
     $maxlimit = 5000000; // tamaño máximo (en bits)
     $allowed_ext = "png,jpg";
@@ -74,7 +77,7 @@ if (isset($_POST['update'])) {
         } else {
             #echo "Error! El tamaño supera el máximo permitido por el servidor. Inténtelo de nuevo."; // error
         }
-    }
+    } */
     $id_gato = $_GET['id'];
     $nombre = asegurar($_POST['nombre']);
     $sexo = $_POST['sexo'];
@@ -107,11 +110,6 @@ if (isset($_POST['update'])) {
     } else {
         $adoptado = 0;
     }
-    /*     if ($_POST['userfile'] == NULL) {
-        $foto = $fotop;
-    } else {
-        $foto = $_POST['userfile'];
-    } */
     $mentor = $_POST['mentor'];
 
     $query = "UPDATE gatos set 

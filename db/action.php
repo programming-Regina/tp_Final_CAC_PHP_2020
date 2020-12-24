@@ -35,4 +35,11 @@ function asegurar($str_recibido)
     return $str_recibido;
 }
 
+
+function monetiza($monto)
+{
+    $fmt = new NumberFormatter('es_AR', NumberFormatter::CURRENCY);
+    echo $fmt->format($monto);
+}
+
 ?>
