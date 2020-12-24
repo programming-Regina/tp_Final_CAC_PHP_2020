@@ -53,6 +53,8 @@
    * Permite operaciones CRUD sobre:<br>
      - tabla de gatos pensionados (subida de fotos funcional)<br>
      - tabla de voluntarios (asigna una clave de acceso por default que debe cambiarse al primer acceso)<br>
+     - tienda <br>
+     - sección de artículos de prensa y difusión y sección de novedades<br>
 <h3>Tecnologías:</h3>
 - HTML5<br>
 - CSS3<br>
@@ -64,5 +66,3 @@
 - bs-custom-file-: resuelve el problema del input tipo file de BS <br>
 - Parte de los textos/contenidos pertenecen a la organización Proyecto 4 Patas y Miao Cats<br><br>
 <p>Este proyecto será adaptado a las necesidades y ofrecido en donación a "El Campito Felino".</p>
-
-<p>Secciones en desarrollo: Novedades, Prensa y Difusión, Tienda, todas secciones actualizables por usuarios con acceso.</p>
