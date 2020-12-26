@@ -101,7 +101,7 @@ $result = mysqli_query($conexion, $query) or die("database error:" . mysqli_erro
                         <li>advertir que deben cambiar la clave la primera vez que accedan al sistema</li>
                         <li>el encuentro quincenal se realiza el primer y tercer domingo de cada mes</li>
                         <li>son bienvenidos los voluntarios eventuales para tareas de mantenimiento semanal</li>
-                        <li>los requisitos para adoptantes citados en nuestra web con excluyentes y sn excepción</li>
+                        <li>los requisitos para adoptantes citados en nuestra web con excluyentes y sin excepción</li>
                     </ul>
                     </form>
                 </div>

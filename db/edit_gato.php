@@ -38,7 +38,7 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update'])) {
-    $foto = subir_foto("0.jpg","../img/adopcion/", $_FILES['userfile']['size'],$_FILES['userfile']['name']);
+    $foto = subir_foto($fotop,"../img/adopcion/", $_FILES['userfile']['size'],$_FILES['userfile']['name']);
     
     $id_gato = $_GET['id'];
     $nombre = asegurar($_POST['nombre']);

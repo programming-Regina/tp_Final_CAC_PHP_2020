@@ -32,7 +32,7 @@ if (isset($_GET['id'])) {
 
     if (isset($_POST['modif_titulo'])) {
 
-        $foto = subir_foto("default.jpg", "../img/prensa/", $_FILES['userfile']['size'], $_FILES['userfile']['name']);
+        $foto = subir_foto($foto, "../img/prensa/", $_FILES['userfile']['size'], $_FILES['userfile']['name']);
 
         $id = $_GET['id'];
         $tit = asegurar($_POST['titulo']);

@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
 
     if (isset($_POST['update'])) {
 
-        $foto = subir_foto("default.jpg", "../img/tienda/", $_FILES['userfile']['size'], $_FILES['userfile']['name']);
+        $foto = subir_foto($foto, "../img/tienda/", $_FILES['userfile']['size'], $_FILES['userfile']['name']);
 
         $id = $_GET['id'];
         $art = asegurar($_POST['articulo']);
