@@ -44,11 +44,11 @@
 
 <p> <b>Al público en general (responsive):</b></p>
    * Secciones:<br>
-       - Página principal, Institucional, Adopción, Salva Vidas, Participá, Donaciones<br>
+       - Página principal, Institucional, Adopción, Salva Vidas, Participá, Donaciones, Novedades, Prensa y Difusión, Tienda<br>
    * Algunas características:<br>
        - Estilos CSS/Bootstrap, con algunos ajustes en Javascript. (Accordion, iframe con mapas)<br>
        - Formulario de contacto funcional con envío por email.<br>
-       - Sección Adoptá/En Adopción muestra candidatos levantados de la base de datos.<br><br>
+       - Secciones Adoptá/En Adopción, Novedades, Prensa y Difusión, Tienda: muestran candidatos listos para adopción y artículos levantados de la base de datos.<br><br>
 <p><b>Privado, pensado para trabajo de escritorio (no responsive)</b></p>
    * Login al área administrativa con sesión de usuario y clave encriptada (algoritmo CRYPT_BLOWFISH)<br>
    * Permite operaciones CRUD sobre:<br>
