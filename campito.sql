@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `id15456491_campito`
+-- Base de datos: `campito`
 --
 
 -- --------------------------------------------------------
@@ -155,7 +155,7 @@ INSERT INTO `usuarios` (`id`, `apellido`, `nombre`, `usuario`, `clave`, `celular
 (16, 'unApellido', 'unNombre', 'user07', 'vol_07', '01188888888', 'unEmail@algunaParte.com'),
 (17, 'unApellido', 'unNombre', 'user08', 'vol_08', '01188888888', 'unEmail@algunaParte.com'),
 (18, 'unApellido', 'unNombre', 'user09', 'vol_09', '01188888888', 'unEmail@algunaParte.com'),
-(19, 'unApellido', 'unNombre', 'user10', 'voluntario', '01188888888', 'unEmail@algunaParte.com');
+(19, 'unApellido', 'unNombre', 'user10', 'vol_10', '01188888888', 'unEmail@algunaParte.com');
 
 --
 -- Índices para tablas volcadas
