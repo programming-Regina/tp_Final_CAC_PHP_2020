@@ -139,22 +139,22 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `apellido`, `nombre`, `usuario`, `clave`, `celular`, `email`) VALUES
-(1, 'Álvarez', 'Josefina', 'joseal', 'voluntario', '(011) 4521-5698', 'josefa2@patitassolidarias.org'),
+(1, 'Álvarez', 'Josefina', 'joseal', 'vol_josef', '(011) 4521-5698', 'josefa2@patitassolidarias.org'),
 (2, 'Figueredo', 'Soledad', 'solefi', '$2y$10$Q3m27mSkd8oUVhjuf8YAcOZPSld4KOuoe5hSxsoeMS.I07q9jWap2', '(011) 5412-6547', 'solefi@patitassolidarias.org'),
-(3, 'Ramírez', 'Paula', 'pauram', 'voluntario', '(011) 8745-5412', 'pauram@patitassolidarias.org'),
-(4, 'Ortega', 'Sebastián', 'sebi', 'voluntario', '(011) 7854-4577', 'sebi@patitassolidarias.org'),
-(7, 'Molares', 'Regina Noemí', 'regina', '$2y$10$.3UUrVrht89JUCTX1mGVaeYmj19xPa50xk1e4rQoENhxEZG24sgba', '(011) 5474-7804', 'regina@patitassolidarias.org'),
-(8, 'Gómez', 'Anahí', 'anahi_g', 'voluntario', '(011) 5487-9654', 'j.bauer@ctu.gov'),
+(3, 'Ramírez', 'Paula', 'pauram', 'vol_pau', '(011) 8745-5412', 'pauram@patitassolidarias.org'),
+(4, 'Ortega', 'Sebastián', 'sebi', 'vol_sebi', '(011) 7854-4577', 'sebi@patitassolidarias.org'),
+(7, 'Molares', 'Regina Noemí', 'regina', '$2y$10$.3UUrVrht89JUCTX1mGVaeYmj19xPa50xk1e4rQoENhxEZG24sgba', '(011) 5444-7888', 'regina@patitassolidarias.org'),
+(8, 'Gómez', 'Anahí', 'anahi_g', 'vol_ana', '(011) 5487-9654', 'j.bauer@ctu.gov'),
 (9, 'Zapata', 'Alejandro', 'alejandro', '$2y$10$cO6/rZxPGiF3zFCfezdUievgCyEt7J/FS.AHs57Y6B9rXmM9gckSO', '(011) 4444-4444', 'az.2020@gmail.com'),
-(10, 'unApellido', 'unNombre', 'user01', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(11, 'unApellido', 'unNombre', 'user02', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(12, 'unApellido', 'unNombre', 'user03', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(13, 'unApellido', 'unNombre', 'user04', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(14, 'unApellido', 'unNombre', 'user05', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(15, 'unApellido', 'unNombre', 'user06', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(16, 'unApellido', 'unNombre', 'user07', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(17, 'unApellido', 'unNombre', 'user08', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
-(18, 'unApellido', 'unNombre', 'user09', 'voluntario', '01188888888', 'unEmail@algunaParte.com'),
+(10, 'unApellido', 'unNombre', 'user01', 'vol_01', '01188888888', 'unEmail@algunaParte.com'),
+(11, 'unApellido', 'unNombre', 'user02', 'vol_02', '01188888888', 'unEmail@algunaParte.com'),
+(12, 'unApellido', 'unNombre', 'user03', 'vol_03', '01188888888', 'unEmail@algunaParte.com'),
+(13, 'unApellido', 'unNombre', 'user04', 'vol_04', '01188888888', 'unEmail@algunaParte.com'),
+(14, 'unApellido', 'unNombre', 'user05', 'vol_05', '01188888888', 'unEmail@algunaParte.com'),
+(15, 'unApellido', 'unNombre', 'user06', 'vol_06', '01188888888', 'unEmail@algunaParte.com'),
+(16, 'unApellido', 'unNombre', 'user07', 'vol_07', '01188888888', 'unEmail@algunaParte.com'),
+(17, 'unApellido', 'unNombre', 'user08', 'vol_08', '01188888888', 'unEmail@algunaParte.com'),
+(18, 'unApellido', 'unNombre', 'user09', 'vol_09', '01188888888', 'unEmail@algunaParte.com'),
 (19, 'unApellido', 'unNombre', 'user10', 'voluntario', '01188888888', 'unEmail@algunaParte.com');
 
 --
