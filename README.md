@@ -35,7 +35,7 @@
             <h3>TRABAJO PRÁCTICO FINAL CODO A CODO - FULLSTACK PHP</h3>
             <h5>DICIEMBRE 2020</h5>
             <h4>por <a href="mailto:programming.regina@gmail.com" style="color: white;">Regina Noemí Molares</a></h4>
-            <!-- h4><a href="https://regina-molares.000webhostapp.com/tp.php" target="_blank">VER ONLINE</a></h4-- !>
+            <!-- h4><a href="https://regina-molares.000webhostapp.com/tp.php" target="_blank">VER ONLINE</a></h4 --!>
         </span> 
     </div>
 
